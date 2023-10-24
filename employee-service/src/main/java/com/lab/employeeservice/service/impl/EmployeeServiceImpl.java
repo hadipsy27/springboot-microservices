@@ -69,7 +69,8 @@ public class EmployeeServiceImpl implements EmployeeService {
         if(employee.getDepartmentCode() != null){
 
             DepartmentDto departmentDto = webClient.get()
-                    .uri("http://localhost:8080/api/departments/" + employee.getDepartmentCode())
+                    // Dhange Departements url service from API Gateway to handle service employee by id in API Gateway service
+                    .uri("http://localhost:9191/api/departments/" + employee.getDepartmentCode())
                     .retrieve()
                     .bodyToMono(DepartmentDto.class)
                     .block();
