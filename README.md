@@ -10,7 +10,7 @@
 * Running All Service in this application
 * Run other departement service if you want <br>
     * Run this command in terminal <br>
-    `java -jar -Dserver.port=8082 "D:\your\folder\springboot-microservices\departement-service\target\departement-service-0.0.1-SNAPSHOT.jar"`
+    `java -jar -Dserver.port=8082 "D:\Learn\Jowo\course\springboot-microservices\departement-service\target\departement-service-0.0.1-SNAPSHOT.jar"`
 * See Eureka client in this url <br>
     `http://localhost:8761/`
 * See Zipkin in this  url <br>
